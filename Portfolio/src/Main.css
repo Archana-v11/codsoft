@@ -1,0 +1,411 @@
+@import 'utilities.css';
+:root{
+--primary: rgb(250, 250, 250);
+--bgDark: rgb(12, 12, 12);
+--white: rgb(250, 250, 250);
+--secondary: rgb(0, 59, 50);
+--bgLight: rgb(190, 181, 181);
+}
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    }
+    .hero {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px;
+        background-size: 100% 120%;
+        
+        /* Additional styles for the hero container */
+        
+    }
+    
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: var(--bgDark);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+        z-index: 100;
+    }
+    header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 5rem;
+    padding: 20px;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    }
+    header nav .left a:hover{
+    color:aquamarine;
+    }
+    header nav {
+    padding: 2rem 0;
+    }
+    
+
+    
+    body{
+        font-family: 'Poppins', sans-serif;
+        }
+        .container{
+        max-width: 1152px;
+        padding: 0 15px;
+        margin: 0 auto;
+        }
+        .hero{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        }
+        
+        .hero .right {
+        color: var(--white);
+        margin-top: -150px;
+        margin-right: 900px;
+        }
+        .hero .right h2{
+        font-size: 4rem;
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+        }
+        .hero .right h3{
+        font-size: 2rem;
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+        }
+        .hero .right h1{
+        font-size: 3.5rem;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+        }
+        
+        .hero .right p{
+        line-height: 1.9;
+        margin-bottom: 2rem;}
+        
+        
+        .flex{
+            display: flex;
+            }
+            .items-centre{
+            align-items: center;
+            }
+            .justify-between{
+            justify-content: space-between;
+            }
+            .justify-center{
+            justify-content: center;
+            }
+            .justify-right{
+            justify-content: right;
+            }
+            .btn{
+            padding: 0.6rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all .2s ease;
+            }
+            .btn-primary{
+            background-color: var(--primary);
+            color: var(--secondary);
+            margin-top: -15rem;
+            }
+            .btn-primary:hover{
+            background: transparent;
+            border-color: var(--primary);
+            color: var(--primary);
+            }
+            .flex-1{
+            flex: 1;
+            }
+            .btn-secondary{
+            background: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+            }
+            .btn-secondary:hover{
+            background: var(--primary);
+            color: var(--secondary);
+            }
+
+
+
+            
+                /* Overall Section Styles */
+#about {
+    padding: 50px 0;
+    background-color: #555;
+}
+
+/* Container Styles */
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Left Side (Image) Styles */
+#about .left {
+    flex: 1;
+    text-align: right; /* Align content to the right */
+}
+
+
+
+/* Right Side (Content) Styles */
+#about .right {
+    flex: 1;
+    padding-left: 40px; /* Add some spacing between image and content */
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.6;
+}
+
+
+
+
+                section.services{
+                    background: rgb(17, 17, 17);
+                    height: 500px;
+                    }
+                    .services-head{
+                    color: rgb(10, 9, 9);
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    line-height: 0.5rem;
+                    color: var(--primary);
+                    }
+                    .services-head + p{
+                    color: var(--white);
+                    font-family: 'Lato', sans-serif;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    margin-bottom: 6rem;
+                    font-weight: 400;
+                    }
+                    .card img{
+                    width: 50px;
+                    background:white;
+                    }
+                    section.services .card-grid{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    column-gap: 2rem;
+                    }
+                    section.services .card-grid .card{
+                    background: var(--white);
+                    padding: 3rem 2rem;
+                    position: relative;
+                    text-align: center;
+                    transition: all .2s ease;
+                    }
+                    section.services .card-grid .card img{
+                    position: absolute;
+                    top: -1.5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: var();
+                    }
+                    section.services .card-grid .card h2{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                    }
+                    section.services .card-grid .card p{
+                    font-family: 'Lato', sans-serif;
+                    color: var(--seconday);
+                    line-height: 1.6;
+                    }
+                    section.services .card-grid .card:hover{
+                        background: rgb(8, 230, 56);
+                        }
+                    section.services .card-grid .card:hover h2{
+                    color:black;
+                    }
+                    section.services .card-grid .card:hover p{
+                    color: black;
+                    }
+                
+
+  /* Overall Section Styles */
+.skills {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+/* Container Styles */
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Skills Container Styles */
+.width-50 {
+    width: 60%;
+    /* Adjust the width as needed */
+}
+
+/* Individual Skill Styles */
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill b {
+    display: block;
+    font-size: 1.5rem; /* Increase the font size for skills */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.skill h1{
+    text-align: center;
+    font-size: 2rem;
+    padding-left: 350px;
+}
+.skill span {
+    display: block;
+    color: #555;
+    font-size: 0.9rem; /* Adjust the font size for percentage */
+    margin-bottom: 10px;
+}
+
+.skill div {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill span {
+    display: block;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    width: 0;
+    transition: width 0.8s ease-in-out;
+}
+
+/* Text Container Styles */
+.skills-text {
+    width: 30%; /* Adjust the width as needed */
+}
+
+.skills-text h2 {
+    font-size: 1.5rem; /* Decrease the font size for heading */
+    margin-bottom: 20px;
+}
+
+.skills-text p {
+    font-size: 1.2rem; /* Decrease the font size for paragraph */
+}
+
+
+/*CONTACT US SECTION*/
+.contact form {
+	width: 66%;
+	margin: 0px auto;
+}
+.contact input,
+textarea {
+	width: 80%;
+	float: left;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #a1a1a1;
+}
+.contact textarea {
+	height: 80px;
+}
+.contact button {
+	width: 80%;
+	float: left;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 10px;
+	background: #ffbf35;
+	color: #fff;
+	border: none;
+	font-size: 16px;
+}
+.contact h3 {
+	font-size: 26px;
+	text-align: center;
+	margin-top: 60px;
+	color: #ffbf35;
+}
+.contact h4 {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 10px;
+}
+.contact p {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}  
+
+/*****FOOTER SECTION*****/
+.footer {
+    background-color: #202020;
+    padding: 30px 20px 40px 20px; /* Adjusted padding for a cleaner look */
+    width: 100%;
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center items vertically */
+}
+
+.footer-sect {
+    color: #b3b3b3;
+}
+
+.footer-sect a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block; /* Align icons horizontally */
+    text-align: center;
+}
+
+/* Increased margin between social icons */
+.footer-sect a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social-icon a i {
+    width: 50px;
+    height: 100px;
+    border: 10px solid #cdcdcd;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: inline-block; /* Align icons horizontally */
+    text-align: center;
+}
